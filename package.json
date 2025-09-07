@@ -1,0 +1,23 @@
+{
+    "name": "playwright_pom_demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "codegen": "npx playwright codegen",
+        "test:spec": "npx playwright test tests/login.spec.js",
+        "test": "npx playwright test",
+        "test:headed": "npx playwright test --headed",
+        "test:debug": "npx playwright test --debug",
+        "report": "npx playwright show-report",
+        "test:spec:chromium:report": "npx playwright test tests/demo/login.spec.js --project=chromium && npx playwright show-report"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "devDependencies": {
+        "@playwright/test": "^1.55.0",
+        "@types/node": "^24.3.1"
+    }
+}
